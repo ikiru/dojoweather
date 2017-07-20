@@ -12,9 +12,10 @@ import { AppComponent } from "./app.component";
 // Services
 import { HttpService } from "./http.service";
 import { ApiService } from "./api.service";
+import { LandingComponent } from './landing/landing.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, LandingComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpModule],
   providers: [HttpService, ApiService],
   bootstrap: [AppComponent]

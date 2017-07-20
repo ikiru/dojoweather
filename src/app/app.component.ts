@@ -11,7 +11,7 @@ export class AppComponent {
   constructor(private _httpService: HttpService) {}
   getCity() {
     this._httpService
-      .retrieveWeather()
+      .retrieveCity()
       .then(city => [(this.city = city)])
       .catch(err => {
         console.log(err);
