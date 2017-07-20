@@ -17,7 +17,7 @@ export class DcComponent implements OnInit {
   constructor(private _apiService: ApiService) {}
 
   ngOnInit() {
-    this.weather = this._apiService.getCity("dc").then(weather => {
+    this.weather = this._apiService.getCity("washingtondc").then(weather => {
       console.log(weather);
       this.humidity = weather.main.humidity;
       this.temp = weather.main.temp;
