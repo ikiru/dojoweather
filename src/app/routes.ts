@@ -11,7 +11,7 @@ import { seattle}from'./seattle/seattle.component';
 
 
 const routes:  Routes = [
-  { path: "/", component: LandingComponent, pathMatch: "full" }
+  { path: '', component: LandingComponent, pathMatch: "full" }
   { path: 'burbank', component: BurbankComponent },
   { path: 'chicago', component: ChicagoComponent },
   { path: 'dallas', component: DallasComponent },
@@ -20,3 +20,5 @@ const routes:  Routes = [
   { path: 'seattle', component: SeattleComponent },
 
 ];
+
+export const routing = RouterModule.forRoot(routes)
